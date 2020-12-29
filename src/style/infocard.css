@@ -1,0 +1,53 @@
+  .Info-card {
+    display: inline;
+    background-color: white;
+    margin-inline: 1%;
+    width: 25%;
+  }
+  
+  .Card-data {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+  }
+  
+  .Card-title {
+    background-color: #ffffff;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 3px 0 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 10px 10px 1px;
+    color: #676a6c;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .Card-number {
+    color: #676a6c;
+    margin: 0;
+  }
+  
+  .Card-subtitle {
+    color: #676a6c;
+    font-size: 'em';
+  }
+  
+  .Cards-container {
+    width: 80%;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .numero {
+      color: #676a6c
+  }
+  .subti {
+    color: #676a6c
+}

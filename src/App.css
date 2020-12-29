@@ -14,15 +14,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f3f3f4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +38,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.clearBoth { clear:both; }
+
+.filter-boton-container {
+  width: 80%;
+  justify-content: space-between;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  /* position: absolute;
+  top: 230px; */
+}
+
+.filter-boton {
+  float: left;
+  margin: 5px;
+  margin-inline: 10px;
+  margin-block: auto;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.task-assign {
+  display: flex;
+  justify-content: right;
+}
+
+.task-boton {
+  float: right;
+  margin: 5px;
+  margin-inline: 10px;
+  margin-block: auto;
+}
+
+.grid-container {
+  width: 80%;
+  background-color: white;
 }

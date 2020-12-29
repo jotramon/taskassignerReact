@@ -1,0 +1,28 @@
+.filter {
+    margin: 10px;
+
+}
+
+.inputs {
+    margin-block: 20px;
+}
+
+.inputs-content {
+    margin-block: 10px;
+}
+
+.time-pickers {
+    text-align: flex;
+}
+
+.date-picker {
+    display: inline;
+    margin-block: auto;
+}
+.time-picker {
+    display: inline;
+}
+
+.container {
+    overflow-y: scroll;
+}
