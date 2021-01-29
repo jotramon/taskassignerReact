@@ -1,0 +1,118 @@
+.alert {
+  flex: 1;
+  height: 35px;
+  width: 32px;
+  margin-block: 0.5em;
+  transition-duration: 0.4s;
+  text-align: center;
+}
+
+.alert:hover {
+  border-radius: 3em;
+  background-color: #cccccc;
+}
+
+.icons-container {
+  display: flex;
+  margin-block: auto;
+  margin-inline: auto;
+}
+
+.table {
+  height: 20em;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  margin-block: 0.2em;
+}
+
+.MuiIconButton-colorPrimary {
+  color: black;
+}
+
+.superContainer .MuiDataGrid-colCellWrapper .MuiDataGrid-cell {
+  min-width: unset !important;
+}
+.superContainer .MuiDataGrid-colCellSortable {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 1;
+}
+.superContainer .rendering-zone {
+  width: unset !important;
+}
+.superContainer .MuiDataGrid-row {
+  flex: 1;
+  width: unset !important;
+}
+.superContainer .MuiDataGrid-cellLeft {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 1;
+}
+.superContainer .MuiDataGrid-viewport {
+  min-width: unset !important;
+  max-width: unset !important;
+}
+.superContainer .MuiDataGrid-colCell:last-child {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 1;
+}
+.superContainer .MuiDataGrid-colCell:last-child > .MuiDataGrid-columnSeparator {
+  display: none;
+}
+.superContainer .MuiDataGrid-colCellSortable:nth-child(2) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 0.2;
+}
+.superContainer .MuiDataGrid-cellLeft:nth-child(2) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 0.2;
+}
+.superContainer .MuiDataGrid-colCellSortable:nth-child(6) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 1.05;
+}
+.superContainer .MuiDataGrid-cellLeft:nth-child(6) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 1.05;
+}
+
+.superContainer .MuiDataGrid-colCellSortable:nth-child(7) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 0.6;
+}
+.superContainer .MuiDataGrid-cellLeft:nth-child(7) {
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 0.6;
+}
+
+.superContainer .status-task.complete {
+  background-color: #1ab394;
+  color: white;
+  font-weight: 600;
+  padding: "10";
+}
+
+.superContainer .status-task.pending {
+  background-color: #f8ac59;
+  color: white;
+  font-weight: 600;
+  padding: "10";
+}
+.superContainer .status-task.noComplete {
+  background-color: #ed5565;
+  color: white;
+  font-weight: 600;
+  padding: "10";
+}

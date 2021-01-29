@@ -1,0 +1,52 @@
+.filter {
+    margin: 10px;
+    padding-inline: 5px;
+}
+
+.inputs {
+    margin-block: 20px;
+}
+
+.inputs-content {
+    margin-block: 10px;
+}
+
+.time-pickers {
+    text-align: flex;
+}
+
+.date-picker {
+    display: inline;
+    margin-block: auto;
+}
+.time-picker {
+    display: inline;
+}
+
+.header-modal {
+    background-color: #212630;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    height: fit-content;
+}
+
+.modal-title {
+    width: fit-content;
+    font-size: 1em;
+    padding-left: 0.5em;
+    margin-block: 0.3em;
+}
+
+.close-icon {
+    height: fit-content;
+    width: fit-content;
+    margin-block: 0.5em;
+    margin-right: 1em;
+    transition-duration: 0.4s;
+}
+
+.close-icon:hover {
+    border-radius: 3em;
+    background-color: grey;
+}

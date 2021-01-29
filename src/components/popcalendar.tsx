@@ -1,47 +1,60 @@
 import React from 'react';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import DateRangeSelector from './daterangeselector';
+import { DateRange } from "@matharumanpreet00/react-daterange-picker";
+import EventOutlinedIcon from '@material-ui/icons/EventOutlined';
+import CalendarTodayOutlinedIcon from '@material-ui/icons/CalendarTodayOutlined';
+import TextField from "@material-ui/core/TextField";
 import "../style/filter.css";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    typography: {
-      padding: theme.spacing(2),
-    },
-  }),
-);
 
 export default function PopoverCalender() {
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
+  const [dateRange, setDateRange] = React.useState<DateRange>({});
+  const [anchorEl, setAnchorEl] = React.useState(false);
+  const [dateRangeSelected, setDateRangeSelected] = React.useState("");
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
+  const handleClick = () => {
+    setAnchorEl(!anchorEl);
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorEl(!anchorEl);
   };
 
+ React.useEffect(() => {
+      console.log("daterange",dateRange);
+      if (dateRange.startDate === undefined || dateRange.endDate === undefined) {
+          setDateRangeSelected("");
+      }
+      else {
+          const startMonth = dateRange.startDate?.getMonth()+1;
+          const endMonth = dateRange.endDate?.getMonth()+1;
+          const string = dateRange.startDate?.getDate()+"/"+startMonth+"/"+dateRange.startDate?.getFullYear()
+          +' - '+dateRange.endDate?.getDate()+'/'+endMonth+'/'+dateRange.endDate?.getFullYear();
+          setDateRangeSelected(string);
+      }
+  }, [dateRange]);
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
   return (
     <div>
-      <Button aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
-        Fecha
-      </Button>
+      <TextField
+          id="outlined-multiline-static"
+          label="Fechas"
+          variant="outlined"
+          size={"small"}
+          value={dateRangeSelected}
+          InputProps={{endAdornment: <CalendarTodayOutlinedIcon onClick={handleClick}/>}}
+      />
       <Popover
         id={id}
         open={open}
-        anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left',
+            vertical: 'center',
+            horizontal: 'center',
           }}
         transformOrigin={{
             vertical: 'top',
@@ -49,7 +62,7 @@ export default function PopoverCalender() {
           }}
       >
         <div>
-            <DateRangeSelector/>
+            <DateRangeSelector setDateRange={setDateRange}/>
         </div>
       </Popover>
     </div>

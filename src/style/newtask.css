@@ -1,6 +1,6 @@
 .filter {
     margin: 10px;
-
+    padding-inline: 5px;
 }
 
 .inputs {
@@ -23,6 +23,12 @@
     display: inline;
 }
 
-.container {
-    overflow-y: scroll;
+.header-modal {
+    background-color: #212630;
+    color: white;
+}
+
+#modal-title {
+    font-size: 2em;
+    padding-left: 1em;
 }

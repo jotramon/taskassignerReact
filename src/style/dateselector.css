@@ -1,4 +1,8 @@
 .date-pickers {
-    display: inline;
-    float: left
+  display: inline;
+  float: left;
+}
+
+.calendar {
+  box-shadow: unset;
 }

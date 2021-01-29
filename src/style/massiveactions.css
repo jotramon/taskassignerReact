@@ -1,0 +1,12 @@
+.search {
+  margin-block: 0.4em;
+  width: 100%;
+}
+
+.input-buscador {
+  width: 100%;
+}
+
+.search-cotainer {
+  flex: 1;
+}

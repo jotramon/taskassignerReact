@@ -1,15 +1,12 @@
-import React from "react";
-import { DateRangePicker, DateRange } from "@matharumanpreet00/react-daterange-picker";
 
-type Props = {}
+import { DateRangePicker } from "@matharumanpreet00/react-daterange-picker";
 
-export default function DateRangeSelector() {
-	const [open, setOpen] = React.useState(true);
-	const [dateRange, setDateRange] = React.useState<DateRange>({});
 
+export default function DateRangeSelector(props: any) {
+	const { setDateRange } = props;
 	return (
 		<DateRangePicker
-			open={open}
+			open={true}
 			onChange={range => setDateRange(range)}
 		/>
 	);

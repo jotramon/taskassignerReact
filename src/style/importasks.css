@@ -5,3 +5,6 @@
 .button-upload {
     margin: 8px;
 }
+div.input-file div {
+    margin-block: 5px;
+}

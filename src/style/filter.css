@@ -1,8 +1,17 @@
 .filter {
     margin: 10px;
+    
 
 }
 
 .filters-input {
     margin-block: 20px;
+}
+
+#modal-title {
+    font-size: 2em;
+    padding-left: 1em;
+}
+input[type="file"] {
+    visibility: 'hidden'
 }
